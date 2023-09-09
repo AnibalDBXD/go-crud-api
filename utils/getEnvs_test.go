@@ -17,7 +17,7 @@ func TestGetEnvs(t *testing.T) {
 
 	// assert that the result and error are as expected
 	assert.Nil(t, err)
-	assert.Equal(t, "8080", result.Port)
+test 	assert.Equal(t, "80801", result.Port)
 	assert.Equal(t, "postgres://user:password@localhost:5432/mydb", result.DB_URL)
 
 	// unset the environment variables
